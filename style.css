@@ -1,0 +1,84 @@
+/* 1. Đặt font chữ chung và căn giữa khối #main */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#main {
+    width: 960px;
+    margin: 0 auto; /* Căn giữa màn hình */
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* 2. Định dạng Đầu trang (Head) */
+#head {
+    height: 100px;
+    background-color: #007bb5;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 5px;
+}
+
+#head h1 {
+    margin: 0;
+}
+
+/* 3. Định dạng Thanh liên kết đầu trang (Head-link) */
+#head-link {
+    background-color: #333333;
+    color: white;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+}
+
+#head-link a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+#head-link a:hover {
+    text-decoration: underline;
+}
+
+/* 4. Định dạng 3 Cột dàn hàng ngang (Left - Content - Right) bằng Float */
+#left {
+    width: 200px;
+    min-height: 400px;
+    float: left;
+    background-color: #e0e0e0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#content {
+    width: 550px;
+    min-height: 400px;
+    float: left;
+    background-color: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#right {
+    width: 210px;
+    min-height: 400px;
+    float: left;
+    background-color: #e0e0e0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* 5. Định dạng Cuối trang (Footer) - Dùng clear: both để xuống hàng */
+#footer {
+    clear: both; /* Ngắt thuộc tính float để footer luôn nằm dưới cùng */
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 5px;
+}
